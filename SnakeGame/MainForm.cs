@@ -58,8 +58,10 @@ namespace SnakeGame
                 canvasBox.Height,
                 Color.Pink);
 
-            gameSnake.Elongate();
-            gameSnake.Elongate();
+            for (int i = 0; i < 40; i++)
+            {
+                gameSnake.Elongate();
+            }
             snakeTimer.Start();
         }
 
@@ -76,8 +78,11 @@ namespace SnakeGame
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Click!");
+            //button1.Visible = false;
             InitGameSnake();
             button1.Hide();
+            button1.Enabled = false;
         }
 
     }

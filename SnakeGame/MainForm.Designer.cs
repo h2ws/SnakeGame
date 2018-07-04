@@ -70,6 +70,7 @@
             // 
             // snakeTimer
             // 
+            this.snakeTimer.Interval = 20;
             this.snakeTimer.Tick += new System.EventHandler(this.snakeTimer_Tick);
             // 
             // MainForm
